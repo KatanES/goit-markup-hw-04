@@ -197,8 +197,20 @@ a {
 
 .hero {
   padding: 188px 0;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 600px;
 
-  background-color: var(--primary-background-color);
+  background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero/people-office-hero.jpg);
+  background-size: cover;
+  background-position: center;
+
   color: #ffffff;
   text-align: center;
 }
