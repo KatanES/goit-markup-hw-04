@@ -353,16 +353,43 @@ a {
   width: 16px;
 }
 
+.media {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 /* CUSTOMERS */
+
+.customers {
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
 
 .customers-list {
   display: flex;
+  justify-content: center;
+  /* padding-top: 72px; */
+  gap: 24px;
 }
 
 .customers-list img {
-  width: 40px;
-  border: 1px solid #8e8f99;
+  width: 104px;
 }
+
+.customer {
+  display: flex;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 168px;
+  height: 88px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .customers {
+  display: flex;
+  width: 168px;
+  height: 88px;
+} */
 
 /* footer section */
 
