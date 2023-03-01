@@ -410,6 +410,10 @@ a {
   width: 264px;
 }
 
+.social-media {
+  display: flex;
+}
+
 /* portfolio page */
 
 .filters {
