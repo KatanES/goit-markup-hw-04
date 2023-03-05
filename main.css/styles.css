@@ -161,8 +161,7 @@ a {
   letter-spacing: 0.02em;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .link:is(:hover, :focus) {
   color: var(--pressed-state-color);
 }
 
@@ -188,8 +187,7 @@ a {
   font-weight: 400;
 }
 
-.contacts a:hover,
-.contacts a:focus {
+.contacts a:is(:hover, :focus) {
   color: var(--pressed-state-color);
 }
 
@@ -201,6 +199,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   height: 600px;
+  background-color: var(--primary-header-color);
 
   background-image: linear-gradient(
       to right,
@@ -230,8 +229,7 @@ a {
   letter-spacing: 0.04em;
 }
 
-.hero-button:hover,
-.hero-button:focus {
+.hero-button:is(:hover, :focus) {
   background-color: #404bbf;
 }
 
@@ -352,11 +350,13 @@ a {
   height: 100%;
   border-radius: 50%;
   background-color: #4d5ae5;
+  cursor: pointer;
 }
 
-/* .team-social-icon {
-  width: 16px;
-} */
+.team-social-link:is(:hover, :focus) {
+  background-color: #404bbf;
+}
+
 /* CUSTOMERS */
 
 .customers {
@@ -385,12 +385,25 @@ a {
   justify-content: center;
 }
 
+.customer:is(:hover, :focus) {
+  border: 1px solid #404bbf;
+}
+
+.customer:is(:hover, :focus) .customer-link-item {
+  fill: #404bbf;
+}
+
 /* footer section */
 
 .page-footer {
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: var(--primary-background-color);
+}
+
+.footer {
+  display: flex;
+  align-items: baseline;
 }
 
 .page-footer a {
@@ -404,9 +417,8 @@ a {
   width: 264px;
 }
 
-.footer-list {
-  display: flex;
-  gap: 120px;
+.footer-logo {
+  padding-right: 120px;
 }
 
 .media {
@@ -433,6 +445,11 @@ a {
   height: 100%;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.footer-social-link:is(:hover, :focus) {
+  background-color: #31d0aa;
 }
 
 /* portfolio page */
@@ -462,8 +479,7 @@ a {
   color: #4d5ae5;
 }
 
-.active-button:hover,
-.active-button:focus {
+.active-button:is(:hover, :focus) {
   background-color: #404bbf;
   color: #ffffff;
 }
