@@ -389,7 +389,7 @@ a {
   border: 1px solid #404bbf;
 }
 
-.customer:is(:hover, :focus) .customer-link-item {
+.customer:hover .customer-link-item {
   fill: #404bbf;
 }
 
